@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    margin: 3% 5% 1%;
+    color: #fff;
+}
+main{
+    display: flex;
+    margin: 5% 0 0;
+    gap: 5%;
+}
+.left-div{
+    flex: 1.5;
+}
+.right-div{
+    flex: 1;
+}
+.left-div img{
+    width: 100%;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 10% 0;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10%;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    width: 45%;
+    height: 46px;
+    border: none;
+    font-size: 15px;
+    border-radius: 23px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px hsl(257, 38%, 33%);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+section{
+    display: flex;
+    gap: 15px;
+}
+.icon{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 40px 0;
+}
+.facebook{
+    margin-left: auto;
+}
+.icon:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+i{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (max-width:700px) {
+    
+    body{
+        background-image: url(images/bg-mobile.svg);
+        margin: 5% 10% 1%;
+    }
+    main{
+        display: block;
+    }
+    header img{
+        height: 40%;
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    .icon{
+        margin-top: 60px;
+    }
+    .right-div{
+        text-align: center;
+    }
+    .instagram{
+        margin-right: auto;
+    }
+
+}
